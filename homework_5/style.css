@@ -1,0 +1,324 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    color: #551B07;
+}
+
+.test{
+    z-index: 3;
+}
+
+
+.body-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
+}
+/*
+#body-container {
+    width: 1440px;
+    height: 1836px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+*/
+
+header {
+    z-index: 2;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+}
+
+#cartIcon {
+    position: absolute;
+    width: 44.07px;
+    height: 42px;
+    left: 1361px;
+    top: 18px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navBar {
+    z-index: 1;
+    position: absolute;
+    width: 1440px;
+    height: 78px;
+    left: 0px;
+    top: 0px;
+
+    border: 1px solid #551B07;
+    box-sizing: border-box;
+}
+
+#logo {
+    position: absolute;
+    width: 53px;
+    height: 51px;
+    left: 60px;
+    top: 13px;
+}
+
+.storeName {
+    position: absolute;
+    width: 348px;
+    height: 78px;
+    left: 133px;
+    top: 0px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+
+    color: #551B07;
+}
+
+#hero {
+    position: absolute;
+    width: 1440px;
+    height: 812px;
+    top: 0px;
+}
+
+#homeLink {
+    position: absolute;
+    width: 73px;
+    height: 78px;
+    left: 796px;
+    top: 0px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+}
+
+#orderLink {
+    /* ORDER */
+
+    position: absolute;
+    width: 80px;
+    height: 78px;
+    left: 930px;
+    top: 0px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+}
+
+#aboutLink {
+    /* ABOUT */
+
+    position: absolute;
+    width: 79px;
+    height: 78px;
+    left: 1062px;
+    top: 0px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+}
+
+#contactLink {
+    /* CONTACT */
+
+    position: absolute;
+    width: 108px;
+    height: 78px;
+    left: 1195px;
+    top: 0px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+}
+
+#heroText {
+    position: absolute;
+    width: 1174px;
+    height: 96px;
+    left: 133px;
+    top: 478px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 72px;
+    line-height: 108px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+#bunDrawing1 {
+    z-index: 2;
+    position: absolute;
+    width: 200px;
+    height: 196px;
+    left: 82px;
+    top: 712px;
+}
+
+#bunDrawing2 {
+    z-index: 2;
+    position: absolute;
+    width: 119px;
+    height: 121px;
+    left: 1254px;
+    top: 671px;
+}
+
+.heroButton {
+    position: absolute;
+    width: 378px;
+    height: 74px;
+    left: 531px;
+    top: 594px;
+
+    background: #FFFFFF;
+    border: 2px solid #551B07;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 48px;
+
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 54px;
+}
+
+.section2 {
+    position: absolute;
+    width: 1440px;
+    height: 1024px;
+    left: 0px;
+    top: 812px;
+    background: #FFFFFF;
+}
+
+
+
+section {
+    width: 1440px;
+    height: 1024px;
+    border: 1px solid #2d2d2d;
+    margin-bottom: 12px;
+}
+
+.testimonial {
+    position: absolute;
+    width: 378px;
+    height: 348px;
+    top: 128px;
+    background: #FFF6E9;
+}
+
+#quote1 {
+    left: 133px;
+}
+
+#quote2 {
+    left: 531px;
+}
+
+#quote3 {
+    left: 929px;
+}
+
+.textbox {
+    margin: 36px 37px;
+    width: 304px;
+    height: 176px;
+    top: 164px;
+    border: 1px solid #551B07;
+    box-sizing: border-box;
+
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+}
+
+.textbox p {
+    width: 217px;
+    margin: 40px;
+}
+
+#textbox1 {
+    left: 170px;
+}
+
+#textbox2 {
+    left: 568px;
+}
+
+#textbox3 {
+    left: 966px;
+}
+
+/* center items */
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#openingQuote1 {
+    position: absolute;
+    width: 41px;
+    height: 128px;
+    left: 182px;
+    top: 116px;
+
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 96px;
+    line-height: 128px;
+    /* identical to box height */
+
+    text-align: center;
+}
+
+#maria {
+    position: absolute;
+    width: 113px;
+    height: 113px;
+    left: 132px;
+    top: 291px;
+}
