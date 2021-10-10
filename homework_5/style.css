@@ -174,7 +174,6 @@ header {
     .footer p {
         font-size: 12px;
     }
-
 }
 /*illustrations*/
 #bunDrawing1 {
@@ -459,8 +458,21 @@ button:hover {
     background-color: #F7C77F !important;
 }
 
+/* About page */
+.aboutText {
+    width: 30%;
+    max-width:378px;
+}
 
+.aboutText h1 {
+    position: absolute;
+    top: 40px;
+}
 
+.aboutImage {
+    width: 60%;
+    max-width: 776px;
+}
 
 
 
