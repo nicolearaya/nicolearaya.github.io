@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bun Bun Bake Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styleFlex.css">
+</head>
+<body>
+
+
+<div class="bodyContainer">
+
+    <div class="navBar navInternal">
+        <div class="logo">
+            <img src="bunbunlogo.svg" id="logo" alt="bun bun logo is a hand drawn cinnamon bun">
+            <div class="storeName">Bun Bun Bake Shop</div>
+        </div>
+        <header>
+            <a id="homeLink" href="index.html">HOME</a>
+            <a class="active" id="orderLink" href="order.html">ORDER</a>
+            <a id="aboutLink" href="index.html">ABOUT</a>
+            <a id="contactLink" href="index.html">CONTACT</a>
+            <img id="cartIcon" src="cartIcon.svg">
+        </header>
+    </div>
+
+    <div class="break"></div>
+
+
+
+    <!-- <svg width="100" height="100">
+        <line x1="0" y1="0" x2="200" y2="200" style="stroke:rgb(255,0,0);stroke-width:2" />
+    </svg> -->
+
+</div>
+
+<div class="sectionContainer">
+    <section class="sectionOrder">
+        <h1>Order</h1>
+        <div class="break"></div>
+        <div class="popup">
+            <h1>Order</h1>
+            <a href="order.html"><img src="x.svg" id="xBtn"></a>
+
+            <div class="detailPhotos">
+                <img class="bunImage" src="detailPhoto.png">
+                <div class="smallImages">
+                    <img class="smallImage" src="detailPhoto.png">
+                    <img class="smallImage" src="detailPhoto.png">
+                    <img class="smallImage" src="detailPhoto.png">
+                </div>
+            </div>
+            <div class="detailText">
+                <div>
+                    <h2>Original</h2>
+                    <img class="barLong" src="barLong.svg">
+                    <h4>$2.95</h4>
+                </div>
+
+                <div>
+                    <div class="selectContainer">
+                        <label for="glazing">Glazing</label>
+                        <select id="glazing" class="detailSelect" name="glazing">
+                            <option value="none">None</option>
+                            <option value="sugarMilk">Sugar-Milk</option>
+                            <option value="vanillaMilk">Vanilla-Milk</option>
+                            <option value="doubleChocolate">Double Chocolate</option>
+                        </select>
+                    </div>
+
+                    <div class="selectContainer">
+                        <label for="quantity">Quantity</label>
+                        <select id="quantity" class="detailSelect" name="quantity">
+                            <option value="one">One (1)</option>
+                            <option value="three">Three (3)</option>
+                            <option value="six">Six (6)</option>
+                            <option value="twelve">Twelve (12)</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <div>
+                    <h3>Details</h3>
+                    <img class="barLong" src="barLong.svg">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+
+                </div>
+                <button class="addToCartButton" type="button" onclick="">Add to Cart</button>
+
+            </div>
+        </div>
+
+    </section>
+    <div class="footer">
+        <div id="foot1">
+            <h2>Have a question? Contact us anytime!</h2>
+            <button class="reviewButton" type="button" onclick="">Contact Us</button>
+        </div>
+        <div id="foot2">
+            <p>hi@bunbunbake.com</p>
+            <p>1224 Forbes Ave, Pittsburgh, PA 15213</p>
+            <p>Copyright 2021 Bun Bun Bake Shop</p>
+        </div>
+
+    </div>
+
+</div>
+
+
+</body>
+</html>

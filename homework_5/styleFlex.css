@@ -64,6 +64,11 @@ header {
     font-size: 24px;
 }
 
+.active {
+    font-weight: 700;
+    text-decoration-line: underline;
+}
+
 .hero-container {
     position: relative;
     display: block;
@@ -180,19 +185,22 @@ header {
     margin: 20px 0px;
     display: block;
     position: relative;
-    width: 500px;
-    height: 420px;
+    width: 378px;
+    height: 348px;
     background-color: #FFF6E9;
     text-align: center;
 }
 
-.testimonial > p {
+.testimonial p {
     font-size: 18px;
+    align-self: center;
 }
 
 .textbox {
+    display: flex;
+    padding: 0px 30px;
+    height: 176px;
     position: relative;
-    padding: 60px 50px;
     margin: 40px 40px 20px;
     border: 1px solid;
     font-size: 24px;
@@ -246,7 +254,7 @@ header {
     margin: 10px;
 }
 
-/* internal pages */
+/* product pages */
 .sectionContainer {
     display: flex;
     flex-direction: column;
@@ -256,10 +264,10 @@ header {
 .sectionOrder {
     display: flex;
     flex-wrap: wrap;
-    row-gap: 20px;
+    row-gap: 40px;
     justify-content: center;
     align-items: center;
-    padding: 40px 20px 100px;
+    padding: 0px 20px 100px;
     column-gap: 20px;
     box-sizing: border-box;
     position: relative;
@@ -280,13 +288,8 @@ header {
 .product {
     margin: 20px 0px;
     display: block;
-    width: 500px;
-    height: 420px;
+    width: 378px;
     text-align: center;
-}
-
-.product img {
-    width: 500px;
 }
 
 .product p {
@@ -294,4 +297,181 @@ header {
     margin: 0px;
     text-align: left;
 }
+
+.popup {
+    box-sizing: content-box;
+    margin-top: 20px;
+    width: 1174px;
+    height: 710px;
+    background-color: #FFF6E9;
+    border: 1px solid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 153px;
+    position: relative;
+}
+
+.popup > a {
+    position: absolute;
+    top: 0px;
+    align-self: flex-start;
+    left: 100%;
+    transform: translate(-80px, 0px);
+}
+
+.popup > h1 {
+    position: absolute;
+    top: -133px;
+    left: 0px;
+
+}
+
+
+.detailPhotos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    width:379px;
+    row-gap: 14px;
+}
+
+.smallImages{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.smallImage {
+    width: 30%;
+}
+
+.detailText {
+    display: flex;
+    flex-direction: column;
+    height:473px;
+    width: 379px;
+    justify-content: space-between;
+}
+
+.detailText h2 {
+    height: 73px;
+    font-size: 36px;
+    font-weight: 500;
+    margin: 0px;
+}
+
+.detailText h4{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+.detailText p {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 18px;
+}
+
+.detailText h3, label {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0px;
+    padding: 0px
+}
+
+.barLong {
+    width: 379px;
+    display: block;
+}
+/*
+.selectContainer {
+    vertical-align: middle;
+    display: inline-block;
+
+} */
+
+.selectContainer {
+    left: 0px;
+    top: 0px;
+    width: 379px;
+    text-align: right;
+    vertical-align: middle;
+    display: inline-block;
+    margin: 4px 0px;
+}
+.selectContainer label {
+    float: left;
+    line-height: 40px;
+    height: 40px;
+    margin: 1px;
+}
+
+.detailSelect {
+    font-size: 14px;
+    width: 266px;
+    padding: 8px 20px;
+    height: 40px;
+    background: #FFF6E9;
+    border: 1px solid #551B07;
+    box-sizing: border-box;
+}
+
+
+
+/*
+select {
+    font-size: 14px;
+    width: 266px;
+    padding: 8px 20px;
+    height: 40px;
+    background: #FFF6E9;
+    border: 1px solid #551B07;
+}
+
+/*
+input {
+    text-indent: 3px;
+}
+
+
+.detailSelect {
+    font-size: 14px;
+    width: 266px;
+    padding: 8px 20px;
+    height: 40px;
+    background: #FFF6E9;
+    border: 1px solid #551B07;
+    box-sizing: border-box;
+    margin: 4px 0px;
+}
+*/
+
+.addToCartButton {
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 18px;
+    line-height: 27px;
+    background-color: #FFF6E9;
+    border: 3px solid #551B07;
+    box-sizing: border-box;
+    border-radius: 48px;
+}
+
+button:hover {
+    background-color: #F7C77F !important;
+}
+
+
+
+
+
 
