@@ -1,0 +1,1 @@
+Extra work: Homepage and Product list page are responsive and mobile-friendly.
