@@ -461,7 +461,6 @@ button:hover {
 /* About page */
 .aboutText {
     width: 30%;
-    max-width:378px;
 }
 
 .aboutText h1 {
