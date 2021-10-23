@@ -17,15 +17,20 @@
 <div class="bodyContainer">
         <div class="navBar navInternal">
             <div class="logo">
-                <img src="bunbunlogo.svg" id="logo" alt="bun bun logo is a hand drawn cinnamon bun">
+                <img src="img/bunbunlogo.svg" id="logo" alt="bun bun logo is a hand drawn cinnamon bun">
                 <div class="storeName">Bun Bun Bake Shop</div>
             </div>
             <header>
                 <a id="homeLink" href="index.html">HOME</a>
                 <a class="active" id="orderLink" href="order.html">ORDER</a>
-                <a id="aboutLink" href="abouts.html">ABOUT</a>
+                <a id="aboutLink" href="about.html">ABOUT</a>
                 <a id="contactLink" href="index.html">CONTACT</a>
-                <img id="cartIcon" src="cartIcon.svg" alt="cart icon">
+                <a id="cartLink" href="cart.html">
+                    <div id="cartContainer">
+                        <img id="cartIcon" src="img/cartIcon.svg">
+                        <span id="cartCountText"></span>
+                    </div>
+                </a>
             </header>
         </div>
     <div class="break"></div>
@@ -39,41 +44,51 @@
         <!-- ORiginal-->
         <div class="product" id="bunOriginal">
             <h1>Order</h1>
-            <a href="productDetail.html">
-                <img class="bunImage" src="bun_image.png" alt="Original Bun Image">
+            <a href="productDetail.html?bunType=Original">
+                <img class="bunImage" src="img/bun_image.png" alt="Original Bun Image">
                 <p>Original</p>
                 <p>$2.95</p>
             </a>
         </div>
         <!-- Blackberry -->
-        <div class="product" id="bunBlackberry">
-            <img class="bunImage" src="bun_image.png" alt="blackberry bun">
-            <p>Blackberry</p>
-            <p>$2.95</p>
+        <div class="product" id="bunBlackberry" onclick="parseUrl()">
+            <a href="productDetail.html?bunType=Blackberry">
+                <img class="bunImage" src="img/bun_image.png" alt="blackberry bun">
+                <p>Blackberry</p>
+                <p>$2.95</p>
+            </a>
         </div>
         <!-- Walnut -->
         <div class="product" id="bunWalnut">
-            <img class="bunImage" src="bun_image.png" alt="walnut bun">
-            <p>Walnut</p>
-            <p>$2.95</p>
+            <a href="productDetail.html?bunType=Walnut">
+                <img class="bunImage" src="img/bun_image.png" alt="walnut bun">
+                <p>Walnut</p>
+                <p>$2.95</p>
+            </a>
         </div>
         <!-- Gluten-Free -->
         <div class="product" id="bunGluten">
-            <img class="bunImage" src="bun_image.png" alt="gluten free bun">
-            <p>Original (Gluten-free)</p>
-            <p>$2.95</p>
+            <a href="productDetail.html?bunType=GlutenFree">
+                <img class="bunImage" src="img/bun_image.png" alt="gluten free bun">
+                <p>Original (Gluten-free)</p>
+                <p>$2.95</p>
+            </a>
         </div>
         <!-- Pumpkin Spice -->
         <div class="product" id="bunPumpkin">
-            <img class="bunImage" src="bun_image.png" alt="Pumpkin bun">
-            <p>Pumpkin Spice</p>
-            <p>$2.95</p>
+            <a href="productDetail.html?bunType=PumpkinSpice">
+                <img class="bunImage" src="img/bun_image.png" alt="Pumpkin bun">
+                <p>Pumpkin Spice</p>
+                <p>$2.95</p>
+            </a>
         </div>
         <!-- Caramel Pecan -->
         <div class="product" id="bunCaramel">
-            <img class="bunImage" src="bun_image.png" alt="caramel bun">
-            <p>Caramel Pecan</p>
-            <p>$2.95</p>
+            <a href="productDetail.html?bunType=CaramelPecan">
+                <img class="bunImage" src="img/bun_image.png" alt="caramel bun">
+                <p>Caramel Pecan</p>
+                <p>$2.95</p>
+            </a>
         </div>
     </section>
 
@@ -90,6 +105,6 @@
         </div>
     </div>
 </div>
-
+<script src="js/cartCount.js"></script>
 </body>
 </html>

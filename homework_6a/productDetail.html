@@ -18,15 +18,20 @@
     <!-- Navigation bar -->
     <div class="navBar navInternal">
         <div class="logo">
-            <img src="bunbunlogo.svg" id="logo" alt="bun bun logo is a hand drawn cinnamon bun">
+            <img src="img/bunbunlogo.svg" id="logo" alt="bun bun logo is a hand drawn cinnamon bun">
             <div class="storeName">Bun Bun Bake Shop</div>
         </div>
         <header>
             <a id="homeLink" href="index.html">HOME</a>
             <a class="active" id="orderLink" href="order.html">ORDER</a>
-            <a id="aboutLink" href="index.html">ABOUT</a>
+            <a id="aboutLink" href="about.html">ABOUT</a>
             <a id="contactLink" href="index.html">CONTACT</a>
-            <img id="cartIcon" src="cartIcon.svg">
+            <a id="cartLink" href="cart.html">
+                <div id="cartContainer">
+                    <img id="cartIcon" src="img/cartIcon.svg">
+                    <span id="cartCountText"></span>
+                </div>
+            </a>
         </header>
     </div>
     <div class="break"></div>
@@ -37,6 +42,7 @@
     <div class="modal-content">
         <span class="close">&times;</span>
         <p>Cart Details</p>
+        <p class="modalItems"></p>
     </div>
 </div>
 <!-- Product Detail Popup  -->
@@ -46,20 +52,20 @@
         <div class="break"></div>
         <div class="popup">
             <h1>Order</h1>
-            <a href="order.html"><img src="x.svg" id="xBtn" alt="close button"></a>
+            <a href="order.html"><img src="img/x.svg" id="xBtn" alt="close button"></a>
             <!-- Photos -->
             <div class="detailPhotos">
-                <img class="bunImage" src="detailPhoto.png" alt="original bun large">
+                <img class="bunImage" src="img/detailPhoto.png" alt="original bun large">
                 <div class="smallImages">
-                    <img class="smallImage" src="detailPhoto.png" alt="original bun small">
-                    <img class="smallImage" src="detailPhoto.png" alt="original bun small">
-                    <img class="smallImage" src="detailPhoto.png" alt="original bun small">
+                    <img class="smallImage" src="img/detailPhoto.png" alt="original bun small">
+                    <img class="smallImage" src="img/detailPhoto.png" alt="original bun small">
+                    <img class="smallImage" src="img/detailPhoto.png" alt="original bun small">
                 </div>
             </div>
             <div class="detailText">
                 <div>
-                    <h2>Original</h2>
-                    <img class="barLong" src="barLong.svg" alt="section break">
+                    <h2 id="bunTypeHeading">Original</h2>
+                    <img class="barLong" src="img/barLong.svg" alt="section break">
                     <h4>$2.95</h4>
                 </div>
                 <!--Select boxes -->
@@ -88,7 +94,7 @@
                 <!-- Details -->
                 <div>
                     <h3>Details</h3>
-                    <img class="barLong" src="barLong.svg" alt="section break">
+                    <img class="barLong" src="img/barLong.svg" alt="section break">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
                 </div>
                 <button id="addToCartButton" type="button">Add to Cart</button>
@@ -108,7 +114,7 @@
         </div>
     </div>
 </div>
-
-<script src="main.js"></script>
+<script src="js/cartCount.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
