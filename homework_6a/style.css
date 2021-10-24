@@ -347,7 +347,6 @@ header {
     position: absolute;
     top: -133px;
     left: 0px;
-
 }
 
 /*Product detail photos*/
@@ -523,5 +522,68 @@ https://www.w3schools.com/howto/howto_css_modals.asp */
     left: 50%;
     transform: translate(-35%, -75%);
 }
+
+/* Cart Page */
+
+.cart {
+    padding: 20px 10px;
+}
+
+#cartItems h3 {
+    align-self: center;
+}
+
+#cartItems img {
+    width: 120px;
+    padding: 0px;
+    border: 1px solid;
+    border-radius: 16px;
+}
+
+.cartBackground {
+    box-sizing: content-box;
+    margin-top: 20px;
+    width: 1174px;
+    background-color: #FFF6E9;
+    border: 1px solid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 153px;
+    position: relative;
+}
+
+.cartBackground > h1 {
+    position: absolute;
+    top: -133px;
+    left: 0px;
+}
+
+
+.cartBackground p {
+    height: 180px;
+}
+
+
+/*    .cartProduct {
+position: absolute;*/
+/*    left: 53px;*/
+/*}*/
+
+/*.bunType {*/
+/*    position: absolute;*/
+/*    left: 185px;*/
+/*}*/
+
+/*.glazing {*/
+/*    position: absolute;*/
+/*    left: 400px;*/
+/*}*/
+
+/*.quantity {*/
+/*    position: absolute;*/
+/*    left: 636px;*/
+/*}*/
 
 

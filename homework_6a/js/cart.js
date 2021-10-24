@@ -1,29 +1,37 @@
 let cartItems = document.getElementById("cartItems");
+let summary = document.getElementById("summary");
+let runningTotal = 0;
+let typeToString = {
+    'Original' : 'Original',
+    'Blackberry' : 'Blackberry',
+    'Walnut' : 'Walnut',
+    'GlutenFree' : 'Original (Gluten-Free)',
+    'PumpkinSpice' : 'Pumpkin Spice',
+    'CaramelPecan': 'Caramel Pecan'
+};
 function get () {
-    // (A) GET FROM SESSION
-    console.log(sessionStorage.length);
-    for(let i=0; i<sessionStorage.length; i++) {
-        let x = JSON.parse(sessionStorage.getItem(i+1));
-        console.log(x);
-        console.log(x.quantity);
-        console.log(cartItems);
-        //create paragraph for each item in cart
-        let para = document.createElement("P");
-        //create text node to append to para
-        let text = document.createTextNode(x.bunType + ' ' + x.glazing + ' ' + x.quantity);      // Create a text node
-        para.appendChild(text);                                          // Append the text to <p>
-        cartItems.appendChild(para);
-        //let textNode = document.createTextNode(x.bunType + ' ' + x.glazing + ' '+ x.quantity + ' </br>');         // Create a text node
-        //cartItems.appendChild(textNode);
-    }
-    // (B) IT WORKS!
-    // Manually opening 1b-session.html will not work though
-    // Session data will perish once tab/window is closed
+    // Retrieve data from session
+    for(let i=0; i<localStorage.length; i++) {
+        let x = JSON.parse(localStorage.getItem(i+1));
 
-    // (EXTRA) TO CLEAR
-    // sessionStorage.removeItem("KEY");
-    // sessionStorage.clear();
+        let para = document.createElement("P"); //create paragraph for each item in cart
+        para.innerHTML = '<img src="img/' + x.bunType + '.jpg" alt=">' + typeToString[x.bunType] + ' bun " class="cart cartProduct"' +
+                         '<span class="cart bunType">' + typeToString[x.bunType] + ' </span> ' +
+                         '<span class="cart glazing">' + x.glazing + ' </span>' +
+                         '<span class="cart quantity">' + x.quantity + ' </span>' +
+                         '<span class="cart price">$' + x.price + '</span>';
+        //let text = document.createTextNode(x.bunType + ' ' + x.glazing + ' ' + x.quantity); //create text node to append to para
+        //para.appendChild(text);  // Append the text to <p>
+
+        cartItems.appendChild(para);
+        runningTotal += x.price;
+        console.log (runningTotal);
+    };
+    let numnericalSub = runningTotal.toFixed(2);
+    let subTotal = document.createElement('H3'); //create h3 for subtotal
+    subTotal.innerHTML = 'Subtotal: $' + numnericalSub;
+    summary.appendChild(subTotal);
 }
 
-window.onload = get;
 
+window.onload = get; //run function

@@ -26,6 +26,32 @@ if(urlParams.has('bunType')) {
     }
 }
 
+let quantToPrice = {
+        '1' : 2.95,
+        '3' : 8.75,
+        '6' : 15.75,
+        '12' : 29.95
+    };
+
+/*  UPDATE PRICE SECTION: updates price when quantity is changed  */
+let updatePrice = function() {
+    let price = document.getElementById('price');
+    let quantity = document.getElementById('quantity').value;
+    price.innerText = '$' + quantToPrice[quantity];
+    /*
+    if (quantity == 'one') {
+        price.innerText = '$2.95'
+    }
+    else if (quantity == 'three') {
+        price.innerText = '$8.50'
+    }
+    else if (quantity == 'six') {
+        price.innerText = '$15.75'
+    }
+    else if (quantity == 'twelve') {
+        price.innerText = '$29.95'
+    } */
+}
 
 
 /*  CART DATA SECTION  */
@@ -34,6 +60,7 @@ function cartItem (bunType, glazing, quantity) {
     this.bunType = bunType;
     this.glazing = glazing;
     this.quantity = quantity;
+    this.price = quantToPrice[quantity];
 }
 // array to keep track of items added to cart
 let cartItems = [];
@@ -43,7 +70,6 @@ let btn = document.getElementById("addToCartButton");
 btn.onclick = function() {
     //get the specific quantities for the new item to add to cart
     let glazing = document.getElementById('glazing').value;
-    console.log(glazing)
     let quantity = document.getElementById('quantity').value;
     //add the new item to the data structure for cart
     /* cartItems.push(new cartItem(bunType, glazing, quantity));
@@ -58,18 +84,19 @@ btn.onclick = function() {
 }
 
 //get number of items already in cart//
-let cartCount = sessionStorage.length;
-console.log(sessionStorage.length)
+let cartCount = localStorage.length;
+console.log(localStorage.length)
 /*  save variables  */
 function store (newItem) {
     //add new item to Session storage
     let index = (cartCount + 1);
-    sessionStorage.setItem(index.toString(), JSON.stringify(newItem));
+    localStorage.setItem(index.toString(), JSON.stringify(newItem));
     //increment cart count by 1
     cartCount ++;
     let cartCountText = document.getElementById('cartCountText');
     //console.log("update cart count to: " + cartCount);
     cartCountText.textContent = cartCount.toString();
+    modal.style.display = "block";
 }
 
 
@@ -88,12 +115,12 @@ for(let i=0; i<cartItems.length; i++) {
 
 
 /* MODAL SECTION */
-/*
+
 let modal = document.getElementById("cartModal");
 // When the user clicks on the button, open the modal
-btn.onclick = function() {
-    modal.style.display = "block";
-}
+// btn.onclick = function() {
+//     modal.style.display = "block";
+// }
 // Get the <span> element that closes the modal
 let span = document.getElementsByClassName("close")[0];
 // When the user clicks on <span> (x), close the modal
@@ -106,4 +133,4 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
-*/
+
