@@ -525,9 +525,7 @@ https://www.w3schools.com/howto/howto_css_modals.asp */
 
 /* Cart Page */
 
-.cart {
-    padding: 20px 10px;
-}
+
 
 #cartItems h3 {
     align-self: center;
@@ -541,7 +539,7 @@ https://www.w3schools.com/howto/howto_css_modals.asp */
 }
 
 .cartBackground {
-    box-sizing: content-box;
+    box-sizing: border-box;
     margin-top: 20px;
     width: 1174px;
     background-color: #FFF6E9;
@@ -552,6 +550,7 @@ https://www.w3schools.com/howto/howto_css_modals.asp */
     align-items: center;
     column-gap: 153px;
     position: relative;
+    justify-content: flex-end;
 }
 
 .cartBackground > h1 {
@@ -560,30 +559,89 @@ https://www.w3schools.com/howto/howto_css_modals.asp */
     left: 0px;
 }
 
-
 .cartBackground p {
+    width: 1174px;
     height: 180px;
+    align-items: center;
+    display: flex;
 }
 
 
-/*    .cartProduct {
-position: absolute;*/
-/*    left: 53px;*/
-/*}*/
+.productDescription {
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    /*flex-grow: 2;*/
+    /*flex-basis: auto;*/
+}
+.glazing {
+    position: absolute;
+    left: 400px;
+    text-align: left;
+}
 
-/*.bunType {*/
-/*    position: absolute;*/
-/*    left: 185px;*/
-/*}*/
+.bunType {
+    padding-left: 20px;
+}
 
-/*.glazing {*/
-/*    position: absolute;*/
-/*    left: 400px;*/
-/*}*/
+.cartProduct {
+    padding-left: 50px;
+}
 
-/*.quantity {*/
-/*    position: absolute;*/
-/*    left: 636px;*/
-/*}*/
+#cartLabels {
+    display: flex;
+    font-size: 24px;
+    padding: 20px 0px;
+}
 
+.price {
+    padding-right: 50px;
+}
+
+.quantity {
+    position: absolute;
+    left: 636px;
+}
+
+.price {
+    position: absolute;
+    left: 1072px;
+}
+
+.remove {
+    position: absolute;
+    left: 823px;
+}
+
+.line {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0.25px #551B07 solid;
+}
+#cartSummary {
+    width: 1174px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+#summary p{
+    text-align: right;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+#checkoutButton{
+    width: 300px;
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 18px;
+    line-height: 27px;
+    background-color: #FFFF;
+    border: 3px solid #551B07;
+    box-sizing: border-box;
+    border-radius: 48px;
+}
 
