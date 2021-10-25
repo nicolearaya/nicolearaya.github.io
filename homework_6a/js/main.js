@@ -38,19 +38,6 @@ let updatePrice = function() {
     let price = document.getElementById('price');
     let quantity = document.getElementById('quantity').value;
     price.innerText = '$' + quantToPrice[quantity];
-    /*
-    if (quantity == 'one') {
-        price.innerText = '$2.95'
-    }
-    else if (quantity == 'three') {
-        price.innerText = '$8.50'
-    }
-    else if (quantity == 'six') {
-        price.innerText = '$15.75'
-    }
-    else if (quantity == 'twelve') {
-        price.innerText = '$29.95'
-    } */
 }
 
 
@@ -72,12 +59,6 @@ btn.onclick = function() {
     let glazing = document.getElementById('glazing').value;
     let quantity = document.getElementById('quantity').value;
     //add the new item to the data structure for cart
-    /* cartItems.push(new cartItem(bunType, glazing, quantity));
-    //
-    console.log(cartItems)
-    let names = cartItems.map(function(item) {
-        return item['bunType'];
-    }); */
     let newItem = new cartItem(bunType, glazing, quantity);
     //console.log(names[0]);
     store(newItem);
@@ -100,27 +81,10 @@ function store (newItem) {
 }
 
 
-/* CART PAGE SECTION
-let cartArea = document.getElementById("cartItems");
-//populate info
-let names = cartItems.map(function(item) {
-    return item['bunType'];
-});
-console.log(names[0]);
-for(let i=0; i<cartItems.length; i++) {
-    cartArea.append('<p>' + cartItems[i].bunType + ' ' + cartItems[i].glazing + ' '+ cartItems[i].quantity + ' </p>');
-}
-
- */
-
 
 /* MODAL SECTION */
-
 let modal = document.getElementById("cartModal");
 // When the user clicks on the button, open the modal
-// btn.onclick = function() {
-//     modal.style.display = "block";
-// }
 // Get the <span> element that closes the modal
 let span = document.getElementsByClassName("close")[0];
 // When the user clicks on <span> (x), close the modal
