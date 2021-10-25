@@ -13,10 +13,9 @@ function get () {
     // Retrieve data from session
     for(let i=0; i<localStorage.length; i++) {
         let x = JSON.parse(localStorage.getItem(i+1));
-
         let para = document.createElement("P"); //create paragraph for each item in cart
         para.innerHTML = '<div class="productDescription"><img src="img/' + x.bunType + '.jpg" alt=">' + typeToString[x.bunType]
-                            + ' bun " class="cart cartProduct">' +
+                            + ' bun " class="cart">' +
                          '<span class="cart bunType">' + typeToString[x.bunType] + ' </span></div> ' +
                          '<span class="cart glazing">' + x.glazing + ' </span>' +
                          '<span class="cart quantity">' + x.quantity + ' </span>' +
