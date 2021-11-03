@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bun Bun Bake Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation bar -->
+<div class="bodyContainer">
+    <div class="navBar navInternal">
+        <div class="logo">
+            <img src="img/bunbunlogo.svg" id="logo" alt="bun bun logo is a hand drawn cinnamon bun">
+            <div class="storeName">Bun Bun Bake Shop</div>
+        </div>
+        <header>
+            <a id="homeLink" href="index.html">HOME</a>
+            <a id="orderLink" href="order.html">ORDER</a>
+            <a class="active" id="aboutLink" href="index.html">ABOUT</a>
+            <a id="contactLink" href="index.html">CONTACT</a>
+            <a id="cartLink" href="cart.html">
+                <div id="cartContainer">
+                    <img id="cartIcon" src="img/cartIcon.svg">
+                    <span id="cartCountText"></span>
+                </div>
+            </a>
+        </header>
+    </div>
+    <div class="break"></div>
+</div>
+
+<!-- About section -->
+<div class="sectionContainer">
+    <section class="sectionOrder">
+        <h1>About</h1>
+        <div class="break"></div>
+        <!-- Text-->
+        <div class="aboutText" id="">
+            <h1>About</h1>
+            <p>We are a small bakery that specializes in cinnamon rolls, from our famous original cinnamon rolls to a variety of artisan flavors. Our shop is located in Pittsburgh, PA and we ship fresh rolls anywhere in the Pittsburgh area. Visitors to our site should be able to buy cinnamon rolls by different flavors. </p>
+            <br>
+            <h3>Contact</h3>
+            <p>hi@bunbunbake.com</p>
+            <br>
+            <h3>Location</h3>
+            <p>1224 Forbes Ave</p>
+            <p>Pittsburgh, PA 15213</p>
+        </div>
+        <!-- Image -->
+        <img class="aboutImage" src="img/about.png" alt="5 coworkers sitting together">
+    </section>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div id="foot1">
+            <h2>Have a question? Contact us anytime!</h2>
+            <button class="reviewButton" type="button" onclick="">Contact Us</button>
+        </div>
+        <div id="foot2">
+            <p>hi@bunbunbake.com</p>
+            <p>1224 Forbes Ave, Pittsburgh, PA 15213</p>
+            <p>Copyright 2021 Bun Bun Bake Shop</p>
+        </div>
+    </div>
+</div>
+<script src="js/cartCount.js"></script>
+</body>
+</html>
