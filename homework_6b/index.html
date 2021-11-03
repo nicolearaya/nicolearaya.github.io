@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bun Bun Bake Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="bodyContainer">
+    <!-- Navigation bar -->
+    <div class="heroDiv">
+        <div class="navBar">
+            <div class="logo">
+                <img src="img/bunbunlogo.svg" id="logo" alt="bun bun logo is a hand drawn cinnamon bun">
+                <div class="storeName">Bun Bun Bake Shop</div>
+            </div>
+            <header>
+                <a class="active" id="homeLink" href="index.html">HOME</a>
+                <a id="orderLink" href="order.html">ORDER</a>
+                <a id="aboutLink" href="about.html">ABOUT</a>
+                <a id="contactLink" href="index.html">CONTACT</a>
+                <a id="cartLink" href="cart.html">
+                    <div id="cartContainer">
+                        <img id="cartIcon" src="img/cartIcon.svg">
+                        <span id="cartCountText"></span>
+                    </div>
+                </a>
+            </header>
+        </div>
+        <!-- Hero Container -->
+        <div class="hero-container">
+            <img src="img/homepage-hero.png" id="hero" alt="hero shows a close up of 5 cute cinnamon buns">
+            <div id="heroText">
+                <p>Customize Your Ideal Bun</p>
+                <button class="heroButton" type="button" onclick="">Order Now!</button>
+            </div>
+            <img id="bunDrawing1" src="img/bunDrawing1.svg" alt="cinnamon bun illustration large">
+            <img id="bunDrawing2" src="img/bunDrawing2.svg" alt="cinnamon bun illustration small">
+        </div>
+    </div>
+    <div class="break"></div>
+</div>
+
+<div>
+    <!-- Testimonial Section -->
+    <section class="sectionHome">
+        <!-- Testimonial 1 -->
+        <div class="testimonial" id="quote1">
+            <div class="textbox" id="textbox1">
+                <img class="openingQuote" src="img/openingQuote.svg" alt="opening quote">
+                <p>The best buns in Pittsburgh! </p>
+                <img class="closingQuote" src="img/closingQuote.svg" alt="closing quote">
+            </div>
+            <p>Maria</p>
+            <div>
+                <img id="maria" class="headshot" src="img/maria.png" alt="photo of Maria, testimonial">
+            </div>
+        </div>
+        <!-- Testimonial 2 -->
+        <div class="testimonial" id="quote2">
+            <div class="textbox" id="textbox2">
+                <img class="openingQuote" src="img/openingQuote.svg" alt="opening quote">
+                <p> I come here every Sunday with my family - its iconic!</p>
+                <img class="closingQuote" src="img/closingQuote.svg" alt="closing quote">
+            </div>
+            <p>Geoff</p>
+            <div>
+                <img id="geoff" class="headshot" src="img/geoff.png" alt="photo of Geoff, testimonial">
+            </div>
+        </div>
+        <!-- Testimonial 3 -->
+        <div class="testimonial" id="quote3">
+            <div class="textbox" id="textbox3">
+                <img class="openingQuote" src="img/openingQuote.svg" alt="opening quote">
+                <p>The Pumpkin Spice bun is AMAZING!</p>
+                <img class="closingQuote" src="img/closingQuote.svg" alt="closing quote">
+            </div>
+            <p>Elle</p>
+            <div>
+                <img id="elle" class="headshot" src="img/elle.png" alt="photo of Elle, testimonial">
+            </div>
+        </div>
+        <div class="break"></div>
+        <button class="reviewButton" type="button" onclick="">Read More Reviews</button>
+        <div class="break"></div>
+    </section>
+    <!-- Footer -->
+    <div class="footer">
+        <div id="foot1">
+            <h2>Have a question? Contact us anytime!</h2>
+            <button class="reviewButton" type="button" onclick="">Contact Us</button>
+        </div>
+        <div id="foot2">
+            <p>hi@bunbunbake.com</p>
+            <p>1224 Forbes Ave, Pittsburgh, PA 15213</p>
+            <p>Copyright 2021 Bun Bun Bake Shop</p>
+        </div>
+    </div>
+</div>
+<script src="js/cartCount.js"></script>
+</body>
+</html>

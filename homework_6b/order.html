@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bun Bun Bake Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation bar -->
+<div class="bodyContainer">
+        <div class="navBar navInternal">
+            <div class="logo">
+                <img src="img/bunbunlogo.svg" id="logo" alt="bun bun logo is a hand drawn cinnamon bun">
+                <div class="storeName">Bun Bun Bake Shop</div>
+            </div>
+            <header>
+                <a id="homeLink" href="index.html">HOME</a>
+                <a class="active" id="orderLink" href="order.html">ORDER</a>
+                <a id="aboutLink" href="about.html">ABOUT</a>
+                <a id="contactLink" href="index.html">CONTACT</a>
+                <a id="cartLink" href="cart.html">
+                    <div id="cartContainer">
+                        <img id="cartIcon" src="img/cartIcon.svg">
+                        <span id="cartCountText"></span>
+                    </div>
+                </a>
+            </header>
+        </div>
+    <div class="break"></div>
+</div>
+
+<!-- Order Container: 6 items in Flex box-->
+<div class="sectionContainer">
+    <section class="sectionOrder">
+        <h1>Order</h1>
+        <div class="break"></div>
+        <!-- ORiginal-->
+        <div class="product" id="bunOriginal">
+            <h1>Order</h1>
+            <a href="productDetail.html?bunType=Original">
+                <img class="bunImage" src="img/Original.jpg" alt="Original Bun Image">
+                <p>Original</p>
+                <p>$2.95</p>
+            </a>
+        </div>
+        <!-- Blackberry -->
+        <div class="product" id="bunBlackberry" onclick="parseUrl()">
+            <a href="productDetail.html?bunType=Blackberry">
+                <img class="bunImage" src="img/Blackberry.jpg" alt="blackberry bun">
+                <p>Blackberry</p>
+                <p>$2.95</p>
+            </a>
+        </div>
+        <!-- Walnut -->
+        <div class="product" id="bunWalnut">
+            <a href="productDetail.html?bunType=Walnut">
+                <img class="bunImage" src="img/Walnut.jpg" alt="walnut bun">
+                <p>Walnut</p>
+                <p>$2.95</p>
+            </a>
+        </div>
+        <!-- Gluten-Free -->
+        <div class="product" id="bunGluten">
+            <a href="productDetail.html?bunType=GlutenFree">
+                <img class="bunImage" src="img/Original.jpg" alt="gluten free bun">
+                <p>Original (Gluten-free)</p>
+                <p>$2.95</p>
+            </a>
+        </div>
+        <!-- Pumpkin Spice -->
+        <div class="product" id="bunPumpkin">
+            <a href="productDetail.html?bunType=PumpkinSpice">
+                <img class="bunImage" src="img/PumpkinSpice.jpg" alt="Pumpkin bun">
+                <p>Pumpkin Spice</p>
+                <p>$2.95</p>
+            </a>
+        </div>
+        <!-- Caramel Pecan -->
+        <div class="product" id="bunCaramel">
+            <a href="productDetail.html?bunType=CaramelPecan">
+                <img class="bunImage" src="img/CaramelPecan.jpg" alt="caramel bun">
+                <p>Caramel Pecan</p>
+                <p>$2.95</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div id="foot1">
+            <h2>Have a question? Contact us anytime!</h2>
+            <button class="reviewButton" type="button" onclick="">Contact Us</button>
+        </div>
+        <div id="foot2">
+            <p>hi@bunbunbake.com</p>
+            <p>1224 Forbes Ave, Pittsburgh, PA 15213</p>
+            <p>Copyright 2021 Bun Bun Bake Shop</p>
+        </div>
+    </div>
+</div>
+<script src="js/cartCount.js"></script>
+</body>
+</html>

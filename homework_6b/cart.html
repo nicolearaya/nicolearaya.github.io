@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bun Bun Bake Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<div class="bodyContainer">
+    <!-- Navigation bar -->
+    <div class="navBar navInternal">
+        <div class="logo">
+            <img src="img/bunbunlogo.svg" id="logo" alt="bun bun logo is a hand drawn cinnamon bun">
+            <div class="storeName">Bun Bun Bake Shop</div>
+        </div>
+        <header>
+            <a id="homeLink" href="index.html">HOME</a>
+            <a id="orderLink" href="order.html">ORDER</a>
+            <a id="aboutLink" href="about.html">ABOUT</a>
+            <a id="contactLink" href="index.html">CONTACT</a>
+            <a id="cartLink" href="cart.html">
+                <div id="cartContainer">
+                    <img id="cartIcon" src="img/cartIcon.svg">
+                    <span id="cartCountText"></span>
+                </div>
+            </a>
+        </header>
+    </div>
+    <div class="break"></div>
+</div>
+
+
+<!-- Product Detail Popup  -->
+<div class="sectionContainer">
+        <section class="sectionOrder">
+            <h1>Order</h1>
+            <div class="break"></div>
+            <div class="cartBackground">
+                <h1>Cart</h1>
+                <!-- Text-->
+                <div id="cartItems">
+                    <div id="cartLabels">
+                        <span class="cartProduct">Product</span>
+                        <span class="glazing">Glazing</span>
+                        <span class="quantity">QTY</span>
+                        <span class="remove">Remove</span>
+                        <span class="price">Price</span>
+                    </div>
+                    <hr class="line">
+                    <div id="cartProducts"></div>
+                </div>
+            </div>
+            <div class="break"></div>
+            <div id="cartSummary">
+                <div id="summary"></div>
+                <div class="break"></div>
+                <button id="checkoutButton" type="button">Checkout</button>
+            </div>
+        </section>
+    <!-- Footer -->
+    <div class="footer">
+        <div id="foot1">
+            <h2>Have a question? Contact us anytime!</h2>
+            <button class="reviewButton" type="button" onclick="">Contact Us</button>
+        </div>
+        <div id="foot2">
+            <p>hi@bunbunbake.com</p>
+            <p>1224 Forbes Ave, Pittsburgh, PA 15213</p>
+            <p>Copyright 2021 Bun Bun Bake Shop</p>
+        </div>
+    </div>
+</div>
+<script src="js/cartCount.js"></script>
+<script src="js/cart.js"></script>
+</body>
+</html>

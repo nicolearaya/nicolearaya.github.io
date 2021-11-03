@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bun Bun Bake Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<div class="bodyContainer">
+    <!-- Navigation bar -->
+    <div class="navBar navInternal">
+        <div class="logo">
+            <img src="img/bunbunlogo.svg" id="logo" alt="bun bun logo is a hand drawn cinnamon bun">
+            <div class="storeName">Bun Bun Bake Shop</div>
+        </div>
+        <header>
+            <a id="homeLink" href="index.html">HOME</a>
+            <a class="active" id="orderLink" href="order.html">ORDER</a>
+            <a id="aboutLink" href="about.html">ABOUT</a>
+            <a id="contactLink" href="index.html">CONTACT</a>
+            <a id="cartLink" href="cart.html">
+                <div id="cartContainer">
+                    <img id="cartIcon" src="img/cartIcon.svg">
+                    <span id="cartCountText"></span>
+                </div>
+            </a>
+        </header>
+    </div>
+    <div class="break"></div>
+</div>
+<!-- Cart Modal -->
+<div id="cartModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Cart Details</p>
+        <p class="modalItems">Your item was added to the cart!</p>
+    </div>
+</div>
+<!-- Product Detail Popup  -->
+<div class="sectionContainer">
+    <section class="sectionOrder">
+        <h1>Order</h1>
+        <div class="break"></div>
+        <div class="popup">
+            <h1>Order</h1>
+            <a href="order.html"><img src="img/x.svg" id="xBtn" alt="close button"></a>
+            <!-- Photos -->
+            <div class="detailPhotos">
+                <img class="detailBun bunImage" src="img/Blackberry.jpg" alt="original bun large">
+                <div class="smallImages">
+                    <img class="detailBun smallImage" src="img/Blackberry.jpg" alt="original bun small">
+                    <img class="detailBun smallImage" src="img/Blackberry.jpg" alt="original bun small">
+                    <img class="detailBun smallImage" src="img/Blackberry.jpg" alt="original bun small">
+                </div>
+            </div>
+            <div class="detailText">
+                <div>
+                    <h2 id="bunTypeHeading">Original</h2>
+                    <img class="barLong" src="img/barLong.svg" alt="section break">
+                    <h4 id="price">$2.95</h4>
+                </div>
+                <!--Select boxes -->
+                <div>
+                    <!-- Glazing -->
+                    <div class="selectContainer">
+                        <label for="glazing">Glazing</label>
+                        <select id="glazing" class="detailSelect" name="glazing">
+                            <option value="None">None</option>
+                            <option value="Sugar-Milk">Sugar-Milk</option>
+                            <option value="Vanilla-Milk">Vanilla-Milk</option>
+                            <option value="Double Chocolate">Double Chocolate</option>
+                        </select>
+                    </div>
+                    <!-- Quantity -->
+                    <div class="selectContainer">
+                        <label for="quantity">Quantity</label>
+                        <select id="quantity" class="detailSelect" name="quantity" onchange="updatePrice()">
+                            <option value="1">One (1)</option>
+                            <option value="3">Three (3)</option>
+                            <option value="6">Six (6)</option>
+                            <option value="12">Twelve (12)</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- Details -->
+                <div>
+                    <h3>Details</h3>
+                    <img class="barLong" src="img/barLong.svg" alt="section break">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                </div>
+                <button id="addToCartButton" type="button">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <div class="footer">
+        <div id="foot1">
+            <h2>Have a question? Contact us anytime!</h2>
+            <button class="reviewButton" type="button" onclick="">Contact Us</button>
+        </div>
+        <div id="foot2">
+            <p>hi@bunbunbake.com</p>
+            <p>1224 Forbes Ave, Pittsburgh, PA 15213</p>
+            <p>Copyright 2021 Bun Bun Bake Shop</p>
+        </div>
+    </div>
+</div>
+<script src="js/cartCount.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
