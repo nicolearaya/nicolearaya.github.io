@@ -1,5 +1,5 @@
-What I did: 
-- made product detail page dynamically update headings and images based on the URL params indicating what type of bun is selected
+Extra credit:
+- added modal pop up (interesting/helpful JS) as feedback of item added to cart
 
 - updated the price when the select box is changed
 
